@@ -76,7 +76,7 @@ subtitle: DESENVOLVEDOR WEB E ESTUDANTE DE T.I.
                         </div>
                     </div>
                     <div class="col-12 col-md-3 mb-3" data-aos="fade-right">
-                        <i class="fab fa-node-js icon text-purple"></i> Node
+                        <i class="fab fa-node-js icon text-purple"></i> Node.js
                         <div class="progress">
                             <div class="progress-bar bg-purple progress-bar-striped" role="progressbar"
                                 style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -130,65 +130,30 @@ subtitle: DESENVOLVEDOR WEB E ESTUDANTE DE T.I.
             <hr>
             <div class="scroll-overflow" data-aos="fade-up">
                 <div class="row flex-nowrap">
-                    <div class="col-12 col-md-3">
-                        <div class="card">
-                            <img src="https://www.tokkoro.com/picsup/5043817-git-github.jpg" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Voluptatibus delectus eum </p>
-                                <a href="#" class="btn-outline-purple">VER MAIS</a>
-                            </div>
-                        </div>
-                    </div>
 
+                    {% for portfolio_item in site.portfolio %}
                     <div class="col-12 col-md-3">
                         <div class="card">
-                            <img src="https://www.tokkoro.com/picsup/5043817-git-github.jpg" class="card-img-top"
-                                alt="...">
+                            <img src="{{ portfolio_item.img }}" class="card-img-top" alt="{{ portfolio_item.title }}">
                             <div class="card-body">
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Voluptatibus delectus eum </p>
-                                <a href="#" class="btn-outline-purple">VER MAIS</a>
+                                <p class="card-text">
+                                    <strong>{{ portfolio_item.title }}. </strong>
+                                    {{ portfolio_item.desc }}
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="{{ portfolio_item.link }}" target="_blank"
+                                            class="btn-outline-purple">VER MAIS</a>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <span class="badge badge-info">{{ portfolio_item.tec}}</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
 
-                    <div class="col-12 col-md-3">
-                        <div class="card">
-                            <img src="https://www.tokkoro.com/picsup/5043817-git-github.jpg" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Voluptatibus delectus eum </p>
-                                <a href="#" class="btn-outline-purple">VER MAIS</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-3">
-                        <div class="card">
-                            <img src="https://www.tokkoro.com/picsup/5043817-git-github.jpg" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Voluptatibus delectus eum </p>
-                                <a href="#" class="btn-outline-purple">VER MAIS</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-3">
-                        <div class="card">
-                            <img src="https://www.tokkoro.com/picsup/5043817-git-github.jpg" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Voluptatibus delectus eum </p>
-                                <a href="#" class="btn-outline-purple">VER MAIS</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -202,65 +167,32 @@ subtitle: DESENVOLVEDOR WEB E ESTUDANTE DE T.I.
             <hr>
             <div class="scroll-overflow" data-aos="fade-up">
                 <div class="row flex-nowrap">
+                    
+                    <div class="col-12 col-md-3">
+                        <p>Ainda não existe nenhum post</p>
+                    </div>
+                    <!-- {% for post in site.posts %}
                     <div class="col-12 col-md-3">
                         <div class="card">
-                            <img src="https://www.tokkoro.com/picsup/5043817-git-github.jpg" class="card-img-top"
-                                alt="...">
+                            <img src="{{ post.img }}" class="card-img-top" alt="{{ post.title }}">
                             <div class="card-body">
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Voluptatibus delectus eum </p>
-                                <a href="#" class="btn-outline-purple">VER MAIS</a>
+                                <p class="card-text">
+                                    <strong>{{ post.title }}. </strong>
+                                    {{ post.desc }}
+                                </p>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="{{ post.url }}" class="btn-outline-purple">VER MAIS</a>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <span class="badge badge-info">{{ post.subject}}</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    {% endfor %} -->
 
-                    <div class="col-12 col-md-3">
-                        <div class="card">
-                            <img src="https://www.tokkoro.com/picsup/5043817-git-github.jpg" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Voluptatibus delectus eum </p>
-                                <a href="#" class="btn-outline-purple">VER MAIS</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-3">
-                        <div class="card">
-                            <img src="https://www.tokkoro.com/picsup/5043817-git-github.jpg" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Voluptatibus delectus eum </p>
-                                <a href="#" class="btn-outline-purple">VER MAIS</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-3">
-                        <div class="card">
-                            <img src="https://www.tokkoro.com/picsup/5043817-git-github.jpg" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Voluptatibus delectus eum </p>
-                                <a href="#" class="btn-outline-purple">VER MAIS</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-3">
-                        <div class="card">
-                            <img src="https://www.tokkoro.com/picsup/5043817-git-github.jpg" class="card-img-top"
-                                alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Voluptatibus delectus eum </p>
-                                <a href="#" class="btn-outline-purple">VER MAIS</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
