@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marcos Vinícius - Página Pessoal</title>
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico">
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
+    <!-- Font imports -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,800&display=swap" rel="stylesheet">
+    <!-- FontAwesome import -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Animate on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-toggler-icon-custom">
+        <a class="navbar-brand" href="#">
+            <!-- <img src="assets/icons/favicon.ico" width="60" height="60" alt="logo"> -->
+            {{ page.title }}
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="wrapper">
+        {{ content }}
+    </div>
+    <footer class="bg-purple">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 copy">
+                </div>
+                <div class="col-12 col-md-4 social">
+                    <a href="https://www.linkedin.com/in/marcosvst/" target="_blank"><i class="fab fa-linkedin"
+                            style="float: right !important; margin-left: 10px;"></i></a>
+                    <a href="https://github.com/marcosvst" target="_blank"><i class="fab fa-github"
+                            style="float: right !important; margin-left: 10px;"></i></a>
+                    <a href="mailto:marcosvst98@gmail.com" target="_blank"><i class="fab fa-google"
+                            style="float: right !important;"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS imports -->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

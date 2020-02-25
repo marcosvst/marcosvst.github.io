@@ -1,0 +1,176 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans';
+}
+
+header {
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center;  
+    background: #42275a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header h1 {
+    font-weight: 800;
+    color: #fff;
+    font-size: 4rem;
+}
+
+header h4 {
+    font-weight: 200;
+    color: #cfcece;
+}
+
+main {
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+    margin: -60px 30px 0;
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+    background: #fff;
+    position: relative;
+    z-index: 3;    
+    margin-bottom: 2% !important;
+    padding: 4%;
+}
+
+main h1 {
+    color: 	#424242;
+}
+
+nav {
+    transition: all 0.2s;
+}
+
+nav a {
+    font-weight: 300 !important;
+}
+
+.bg-light-custom {
+    background-color: #fff;
+    box-shadow: 0 4px 18px 0 rgba(0,0,0,.12), 0 7px 10px -5px rgba(255, 255, 255, 0.15);
+}
+
+.bg-light-custom a {
+    color: #333 !important;
+}
+
+@media only screen and (max-width: 600px) {
+    header h1, h4 {
+        text-align: center;
+    }
+
+    .social{
+        margin-top: 10px;
+        margin-left: -35%;
+    }
+
+    .copy{
+        margin: 0 auto !important;
+    }
+}
+
+.card {
+    display: block;
+    max-width: 100%;
+    outline: none;
+    text-decoration: none;
+    transition-property: box-shadow, opacity;
+    overflow-wrap: break-word;
+    position: relative;
+    white-space: normal;
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: box-shadow;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin-bottom: 5%;
+}
+
+.card p {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.btn-outline-purple {
+    color: #42275a;
+    border-color: #42275a;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 0.9rem;
+}
+
+.btn-outline-purple:hover {
+    text-decoration: none !important;
+    color: #734b6d;
+}
+
+.scroll-overflow {
+    height: auto;
+    overflow-y: scroll;
+}
+
+.scroll-overflow::-webkit-scrollbar-track {
+    background-color: #fff !important;
+}
+
+.scroll-overflow::-webkit-scrollbar {
+    height: 4px;
+    background: #F4F4F4 !important;
+}
+
+.scroll-overflow::-webkit-scrollbar-thumb {
+    background: #734b6d !important; 
+}
+
+.bg-purple {
+    background-color: #42275a;
+    color: #fff;
+}
+
+footer{
+    color: #fff !important;
+    padding: 2em;
+}
+
+footer a{
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+footer i:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.text-purple {
+    color: #42275a;
+}
+
+.bg-purple {
+    background-color: #42275a;
+}
+
+.bg-purple:hover {
+    background-color: #301e41;
+    color: #fff;
+}
+
+.line-bottom {
+    width: 30px;
+    background-color: #42275a;
+    padding: 1px;
+}
