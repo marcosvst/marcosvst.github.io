@@ -174,3 +174,7 @@ footer i:hover{
     background-color: #42275a;
     padding: 1px;
 }
+
+.bg-blog {
+    background-image: url("/assets/images/book.fw.png");
+}
