@@ -1,16 +1,21 @@
-$(document).on("scroll",function(){
+$(document).on("scroll", function () {
 
     // Scrolling effect
-    if($(document).scrollTop() > 300){ 
+    if ($(document).scrollTop() > 300) {
         $("nav").addClass("bg-light-custom");
         $("nav").removeClass("navbar-toggler-icon");
         $("span").addClass("navbar-toggler-icon-custom");
-    } else{
+    } else {
         $("nav").removeClass("bg-light-custom");
         $("span").removeClass("navbar-toggler-icon-custom");
     }
 
 });
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+});
+
 
 // (function() {
 //     function scrollHorizontally(e) {

@@ -178,3 +178,11 @@ footer i:hover{
 .bg-blog {
     background-image: url("/assets/images/book.fw.png");
 }
+
+.icons i {
+    transition: all .1s;
+}
+
+.icons i:hover {
+    color: #301e41;
+}
